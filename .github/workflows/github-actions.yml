@@ -18,6 +18,7 @@ jobs:
     - name: deploy
       uses: azure/arm-deploy@v1
       with:
+        region: 'westeurope'
         scope: 'subscription'
         template: ./main.bicep
         parameters: 'resourceGroupName=gh-actions-rg-unique'
